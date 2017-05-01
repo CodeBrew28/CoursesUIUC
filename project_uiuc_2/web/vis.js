@@ -8,16 +8,21 @@ $(function() {
 
      }
      const rows = d3.csv.parse(data)
-            .map(r => ({name: r.Class, parent: r.Dependency.split(',').map(s => s.trim())[0] || null, _children: undefined}))
-      
+            .map(r => ({name: r.Class, parents: _.filter(r.Dependency.split(',').map(s => s.trim()), p => p != "") || [], _children: undefined}))
+     console.log(rows)
      rows
       .forEach(r => _hash[r.name] = r)
 
-    rows
+    rows.reverse()
       .forEach(r => {
-        if(r.parent != null){
-          _hash[r.parent]._children = _hash[r.parent]._children || []
-          _hash[r.parent]._children.push(r)
+        if(r.parents.length != 0){
+            console.log(r.parents)
+            r.parents.forEach(p => {
+                console.log(p)
+                _hash[p]._children = _hash[p]._children || []
+                //_hash[p]._children.push(r)       
+                _hash[p]._children.push(jQuery.extend(true, {}, r))       
+            });
         } else {
           tree.push(_hash[r.name])
         }
