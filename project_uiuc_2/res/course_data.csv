@@ -1,0 +1,43 @@
+Class,Description,Dependency
+CS 125,Intro to Computer Science,
+MATH 415,Linear Algebra,
+CS 126,Software Design Studio,CS 125
+CS 173,Discrete Structures,CS 125
+CS 196-25,Freshman Honors (CS 125),CS 125
+CS 196-73,Freshman Honors (CS 173),CS 173
+CS 199,Undergraduate Open Seminar,CS 125
+CS 210,Ethics & Professional Issues,CS 225
+CS 225,Data Structures,"CS 173, CS 126"
+CS 233,Computer Architecture,CS 225
+CS 241,System Programming,CS 225
+CS 242,Programming Studio,CS 241
+CS 296-25,Honors Course (CS 225),CS 225
+CS 296-33,Honors Course (CS 233),CS 233
+CS 296-41,Honors Course (CS 241),CS 241
+CS 357,Numerical Methods I,"MATH 415, CS 125"
+CS 361,Prob & Stat for Computer Sci,MATH 415
+CS 374,Intro to Algs & Models of Comp,"CS 225, MATH 415"
+CS 410,Text Information Systems,CS 225
+CS 411,Database Systems,CS 225
+CS 412,Intro to Data Mining,CS 225
+CS 418,Interactive Computer Graphics,"CS 225, MATH 415"
+CS 419,Production Computer Graphics,CS 418
+CS 421,Programming Languages & Compilers,"CS 233, CS 374"
+CS 422,Programming Language Design,CS 421
+CS 423,Operating Systems Design,CS 241
+CS 425,Distributed Systems,CS 241
+CS 427,Software Engineering I,"CS 225, CS 374"
+CS 428,Software Engineering II,CS 427
+CS 429,"Software Engineering II, ACP",CS 427
+CS 431,Embedded Systems,CS 241
+CS 433,Computer System Organization,CS 233
+CS 438,Communication Networks,CS 241
+CS 440,Artificial Intelligence,CS 225
+CS 446,Machine Learning,"CS 440, CS 374"
+CS 450,Numerical Analysis,"CS 125, MATH 415"
+CS 461,Computer Security I,CS 241
+CS 463,Computer Security II,CS 461
+CS 465,User Interface Design,CS 225
+CS 466,Introduction to Bioinformatics,CS 225
+CS 482,Simulation,CS 125
+CS 484,Parallel Programming,CS 241

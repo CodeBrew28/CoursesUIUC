@@ -1,0 +1,46 @@
+{% extends "static/templates/projectBase.html" %}
+{% block projectContent %}
+<style>
+  .node {
+    cursor: pointer;
+  }
+   
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:10px; 
+    font-family:sans-serif;
+  }
+   
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+
+</style>
+<h2>Gender Diversity at Illinois</h2>
+<div id="tree-container"></div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="web/vis.js"></script>
+
+{% endblock %}
